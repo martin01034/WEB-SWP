@@ -1,8 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
+using System;
 
-namespace Betting_System.Data.Migrations
+namespace EDV_Shop.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

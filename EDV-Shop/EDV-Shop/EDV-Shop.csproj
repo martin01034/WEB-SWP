@@ -2,17 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-Betting_System-98A7BA4B-B6D5-4D1E-8B82-3320DE3EA759</UserSecretsId>
-    <RootNamespace>Betting_System</RootNamespace>
+    <UserSecretsId>aspnet-EDV_Shop-FD63B4CB-329B-4B5C-94BA-690C9701D15C</UserSecretsId>
+    <RootNamespace>EDV_Shop</RootNamespace>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Data\Migrations\20210122100937_OpponentBet.cs" />
-    <Compile Remove="Data\Migrations\20210122100937_OpponentBet.Designer.cs" />
-    <Compile Remove="Data\Migrations\20210122101314_Bet.cs" />
-    <Compile Remove="Data\Migrations\20210122101314_Bet.Designer.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
@@ -21,10 +14,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>
