@@ -12,6 +12,7 @@ using Library.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Library.Repositories;
 
 namespace Library
 {
@@ -32,6 +33,9 @@ namespace Library
                     Configuration.GetConnectionString("LibraryDBConnectionString")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped<IBookDataRepository, BookDataRepository>();
+
             services.AddRazorPages();
         }
 
